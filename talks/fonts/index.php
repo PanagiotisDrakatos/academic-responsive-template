@@ -21,7 +21,7 @@
     function backAway(){
         //if it was the first page
         if(history.length === 1){
-            window.location = "../index.html"
+            window.location = "../../index.php"
         } else {
             window.history.back();
         }

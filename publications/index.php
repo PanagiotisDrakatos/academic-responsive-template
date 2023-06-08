@@ -3,7 +3,7 @@
 
 <head>
 <meta charset="utf-8">
-<title>[ Zeinalipour | All Publications ]</title>
+<title>[ Drakatos | All Publications ]</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Font Awesome Icons -->
@@ -86,7 +86,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <span><a href="../index.html"><img border="0" width="170" src="images/csucy.png"/></a></span>
+            <span><a href="../index.php"><img border="0" width="170" src="images/csucy.png"/></a></span>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -96,47 +96,47 @@
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 Home<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                    <li><a href="../index.html#intro">Introduction</a></li>
+                    <li><a href="../index.php#intro">Introduction</a></li>
                         <li><a href="../bio.html">Biography</a></li>
                         <li><a href="../cv.html">CV (Web)</a></li>
                         <li><a target="_blank" href="../zeinalipour.pdf">CV (PDF)</a></li>
                     </ul>
                 </li>
                 <li class="page-scroll">
-                <a href="../index.html#news">News</a>
+                <a href="../index.php#news">News</a>
                 </li>
                 <li class="dropdown">
                 <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                 Publications<span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                    <li><a href="../index.html#publications">Selected</a></li>
+                    <li><a href="../index.php#publications">Selected</a></li>
                         <li><a href="index.php">All</a></li>
                     </ul>
                 </li>
                 <li class="page-scroll">
-                    <a href="../index.html#awards">Awards</a>
+                    <a href="../index.php#awards">Awards</a>
                 </li>
                 <li class="page-scroll">
                     <a href="../talks/">Talks</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="../index.html#courses">Courses</a>
+                    <a href="../index.php#courses">Courses</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="../index.html#systems">Systems</a>
+                    <a href="../index.php#systems">Systems</a>
                 </li>
                 <li class="page-scroll">
-                    <a href="../index.html#service">Service</a>
+                    <a href="../index.php#service">Service</a>
                 </li>
                 <li class="page-scroll">
-                <a href="../index.html#advising">Advising</a>
+                <a href="../index.php#advising">Advising</a>
                 </li>
                 <li class="page-scroll">
                     <a target="_blank" href="http://dmsl.cs.ucy.ac.cy/projects.php">Grants</a>
                 </li>
 
                 <li class="page-scroll">
-                    <a href="../index.html#contact">Contact</a>
+                    <a href="../index.php#contact">Contact</a>
                 </li>
                 <li class="page-scroll">
                     <a onclick="$('#bs-example-navbar-collapse-2').toggle();">
@@ -161,7 +161,7 @@
 
 <section id="tree" style="margin-top:50px">
     <div class="container">
-        <a href="../index.html">Zeinalipour</a> > All Publications
+        <a href="../index.php">Drakatos</a> > All Publications
     </div>
 </section>
 
@@ -169,12 +169,14 @@
 <section id="home">
     <div class="container" id="publications">
     <br>
-    <h1 align="CENTER">All Publications of Demetris Zeinalipour</h1>
+    <h1 align="CENTER">All Publications of Panagiotis Drakatos</h1>
     <br>
+    </div>
+</section>
 <?php
     error_reporting(E_ALL);
     ini_set('display_errors', '1');
-    
+
     /*
      Available Fields: 
      

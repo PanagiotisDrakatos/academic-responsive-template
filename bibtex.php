@@ -69,6 +69,7 @@
                                  'folder' => array(),
                                  'type' => array(),
                                  'series' => array(),
+                                 'shorten_title'=>array(),
 				 'number' => array(),
                                  'linebegin' => array(),
                                  'lineend' => array(),
@@ -426,7 +427,7 @@
             }
             if (isset($this->sortedItems['raw'][$element])) {
                 $this->resultedHtml .= '&nbsp;<a href="#bibtex-'.$element.'" title="Bibtex Citation" id="publink-'.$element.'"><i class="fa fa-bold">&nbsp;</i></a>';
-		$this->resultedHtml .= '<div style="display:none"><div id="bibtex-'.$element.'"><pre>'.$this->sortedItems['raw'][$element].'</pre></div></div>';
+                $this->resultedHtml .= '<div style="display:none"><div id="bibtex-'.$element.'"><pre>'.$this->sortedItems['raw'][$element].'</pre></div></div>';
                 //$this->resultedHtml .= '<a class="publications-title" href="#bibtex-'.$element.'" class="fa fa-book" title="BibTex" id="publink-'.$element.'" href="#" title="BibTex Reference"></a>&nbsp;';
             }
             if (isset($this->sortedItems['durl'][$element])) {
@@ -445,14 +446,15 @@
             $previous = array_slice($this->sortedItems['type'], 0, $iterator + 1, true);
             $counts = array_count_values($previous);
             $all = array_count_values($this->sortedItems['type']);
-            
+
+            $shorten_title=$this->sortedItems['shorten_title'][$iterator];
             $number = $all[$type] - $counts[$type] + 1;
             if($type == 'book') {
-                $this->resultedHtml .=  "<strong>[B".$number."]</strong> ";
+                $this->resultedHtml .=  "<span class='label label-success'>$shorten_title</span><strong>[B".$number."]</strong> ";
                 
             }
             else {
-                $this->resultedHtml .=  "<strong>[".ucfirst(substr($type, 0, 1))."".$number."]</strong> ";
+                $this->resultedHtml .=  "<span class='label label-success'>$shorten_title</span><strong>[".ucfirst(substr($type, 0, 1))."".$number."]</strong> ";
             }
         }
 		

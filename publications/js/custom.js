@@ -31,8 +31,7 @@ jQuery(document).ready(function(){
 		filter				: '*',
 		layoutMode			: 'straightDown',
 		animationEngine 	: 'css',
-	});	
-	
+	});
 	$filter.find('a').click(function(){
 	  var selector = $(this).attr('data-filter');
 		$container.isotope({ 
